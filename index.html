@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pepsi Website Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+  <body>
+    <section class="sec">
+      <!-- <div class="circle"></div> -->
+      <header>
+        <a href="#" class="logo"><img src="static/images/logo.png" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>That's what<br /><span>i like</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            explicabo dignissimos temporibus nisi perspiciatis sequi. Facere,
+            sed alias corrupti perspiciatis explicabo mollitia, tempora adipisci
+            ratione, maiores itaque ea expedita maxime.
+          </p>
+          <a href="#">View all products</a>
+        </div>
+        <div class="imgBox">
+          <img src="static/images/pepsi001.png" class="pepsi" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="static/images/pepsi001.png"
+            onclick="imgSlider('static/images/pepsi001.png');changeCircleColor('#0062be')"
+          />
+        </li>
+        <li>
+          <img
+            src="static/images/pepsi002.png"
+            onclick="imgSlider('static/images/pepsi002.png');changeCircleColor('#e60c2d')"
+          />
+        </li>
+        <li>
+          <img
+            src="static/images/pepsi003.png"
+            onclick="imgSlider('static/images/pepsi003.png');changeCircleColor('#24282b')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="static/images/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="static/images/twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="static/images/instagram.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".pepsi").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".sec");
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>
